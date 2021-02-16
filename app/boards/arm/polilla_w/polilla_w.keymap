@@ -21,14 +21,14 @@
         default_layer {
 // ,-----------------------------------,              ,-----------------------------------,
 // |  =  |  1  |  2  |  3  |  4  |  5  |              |  6  |  7  |  8  |  9  |  0  |  -  |
-// | TAB |  Q  |  W  |  E  |  R  |  T  |              |  Y  |  U  |  I  |  O  |  P  |  ]  |
+// | TAB |  Q  |  W  |  E  |  R  |  T  |              |  Y  |  U  |  I  |  O  |  P  |  \  |
 // | CAPS|  A  |  S  |  D  |  F  |  G  |-----,  ,-----|  H  |  J  |  K  |  L  |  ;  |  '  |
 // | SFT |  Z  |  X  |  C  |  V  |  B  | DEL |  | ESC |  N  |  M  |  ,  |  .  |  /  | SFT |
 // '-----------| LAL | GUI |LOWER| SPC | CTL |  | RET | BSPC|UPPER| PP | SYS/Mute |------'
 //             '-----------------------------'  '-----------------------------'
             bindings = <
 &kp EQUAL   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                               &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS
-&kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P       &kp RBKT
+&kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSLH
 &kp CAPS    &kp A       &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp DEL     &kp ESC      &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
                         &kp LALT    &kp LGUI    &mo LOWER   &kp SPACE   &kp LCTRL   &mt RALT RET &kp BSPC   &mo UPPER   &kp C_PP  	&lt SYS C_MUTE
@@ -75,14 +75,14 @@
 // | --- | --- | --- | --- | --- | --- |              | --- | --- | --- | --- | --- | --- |
 // | --- | --- | --- | --- | --- | --- |-----,  ,-----| --- | --- | --- | --- | --- | --- |
 // | --- | --- | --- | --- | --- | --- |BOOT |  | RST | --- | --- | --- | --- | --- | --- |
-// '-----------| --- | --- | --- | --- | TOG |  | --- | --- | --- |  T  | --- |-----------'
+// '-----------| --- | --- | --- | --- | BLE |  | USB | --- | --- |  T  | --- |-----------'
 //             '-----------------------------'  '-----------------------------'
             bindings = < 
-&bt BT_CLR	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &none      	&none      	&none      	&none      	&none     	&none
-&none		&none 		&none 		&none 		&none 		&none                    			&none       &none 		&none     	&none 		&none  		&none
-&none       &none       &none  		&none    	&none		&none                            	&none    	&none    	&none    	&none   	&none     	&none
-&none   	&none       &none 		&none 		&none 		&none     	&bootloader &reset      &none       &none 		&none    	&none 		&none    	&none
-                        &none      	&none       &none      	&none      	&out OUT_TOG      	&none       &none       &none      	&none       &trans
+&bt BT_CLR	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                        &none      	&none      	&none      	&none      	&none     	&none
+&none		&none 		&none 		&none 		&none 		&none                                   &none       &none 		&none     	&none 		&none  		&none
+&none       &none       &none  		&none    	&none		&none                                   &none    	&none    	&none    	&none   	&none     	&none
+&none   	&none       &none 		&none 		&none 		&none     	&bootloader   &reset        &none       &none 		&none    	&none 		&none    	&none
+                        &none      	&none       &none      	&none      	&out OUT_BLE  &out OUT_USB  &none       &none      	&none       &trans
             >;
         };
     };
