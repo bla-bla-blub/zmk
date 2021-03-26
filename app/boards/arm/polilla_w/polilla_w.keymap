@@ -93,14 +93,14 @@
 // | --- | --- | --- | --- | --- | --- |              | --- |  7  |  8  |  9  |  +  | --- |
 // |  T  | --- | --- | --- | --- | --- |-----,  ,-----| --- |  4  |  5  |  6  |  +  | --- |
 // | --- | --- | --- | --- | --- | --- | --- |  | --- | --- |  1  |  2  |  3  |  +  | --- |
-// '-----------| --- | --- | --- | --- | --- |  | ENT | --- |  0  |  ,  |  .  |-----------'
+// '-----------| --- | --- | --- | --- | --- |  | ENT |  T  |  0  |  ,  |  .  |-----------'
 //             '-----------------------------'  '-----------------------------'
             bindings = < 
 &none       &none       &none       &none       &none       &none                                   &none      	&kp KP_NLCK &kp KP_DIVIDE   &kp KP_MULTIPLY &kp KP_MINUS    &none
 &none       &none       &none       &none       &none       &none                                   &none       &kp N7      &kp N8          &kp N9          &kp KP_PLUS     &none
-&trans      &none       &none       &none       &none       &none                                   &none    	&kp N4      &kp N5          &kp N6          &kp KP_PLUS     &none
+&trans      &none       &none       &none       &none       &none                                   &none       &kp N4      &kp N5          &kp N6          &kp KP_PLUS     &none
 &none       &none       &none       &none       &none       &none     	&none         &none         &none       &kp N1      &kp N2          &kp N3          &kp KP_PLUS     &none
-                        &none      	&none       &none       &none      	&none         &kp KP_ENTER  &none       &kp N0      &kp COMMA    &kp DOT
+                        &none      	&none       &none       &none      	&none         &kp KP_ENTER  &trans      &kp N0      &kp COMMA    &kp DOT
             >;
         };
 
